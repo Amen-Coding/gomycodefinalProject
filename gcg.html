@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports is Necessary for Good Health</title>
+    <title>Sports is Necessary for Good Health</title>
+
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #de0202;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #63c518;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('acceuil')">Accueil</a></li>
+            <li><a href="#" onclick="showSection('sport')">Sport</a></li>
+            <li><a href="#" onclick="redirectToNews()">News</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="acceuil">
+            <h1>Definition of Football</h1>
+            <p>Football, also called association football or soccer, is a game involving two teams of 11 players who try to maneuver the ball into the other team’s goal without using their hands or arms. The team that scores more goals wins. Football is the world’s most popular ball game in terms of participants and spectators.</p>
+            <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/9cd01d75b7de46c09d11e5e580b0f358_9366/IN9378_02_standard.jpg" alt="Football Image" width="500px">
+            <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2022/11/17/3491603-71179228-2560-1440.jpg" alt="Football Image 2" width="500px">
+            <img src="https://pbs.twimg.com/media/FlNutiWWYAcreGd.jpg:large" alt="Football Image 3" width="410px">
+            
+            <h1>History of Football</h1>
+            <p>Modern football originated in Britain in the 19th century. The game evolved from earlier "folk football" games played in towns and villages, adapting to urbanization and the rise of public schools like Winchester, Charterhouse, and Eton College. By 1863, the Football Association (FA) established rules that prohibited handling the ball except for goalkeepers, shaping the game into what we know today.</p>
+        </section>
+
+        <section id="sport">
+            <center>
+                <h1>Advantages of Sports</h1>
+                <img src="https://media.istockphoto.com/id/1141191007/vector/sports-set-of-athletes-of-various-sports-disciplines-isolated-vector-silhouettes-run-soccer.jpg?s=612x612&w=0&k=20&c=SEabW4SHZ7blMHJPxZNSTl_anOMHO3whQI7HIMxFpSg=" alt="Various Sports" width="800px">
+            </center>
+            <p><strong>Physical Fitness:</strong> Regular participation in sports improves cardiovascular health, muscle strength, flexibility, and overall fitness.</p>
+            <p><strong>Mental Health:</strong> Sports reduce stress, anxiety, and depression, boosting mood through the release of endorphins.</p>
+            <p><strong>Discipline and Focus:</strong> Sports teach time management, goal setting, and concentration, instilling a sense of discipline.</p>
+            <p><strong>Teamwork and Social Skills:</strong> Many sports require cooperation and communication, helping individuals develop strong social connections.</p>
+            <p><strong>Self-Esteem and Confidence:</strong> Achieving goals or improving in sports builds confidence and self-esteem.</p>
+            <p><strong>Healthy Habits:</strong> Regular exercise encourages a healthy lifestyle and reduces the risk of chronic diseases such as heart disease and diabetes.</p>
+            <p><strong>Stress Relief:</strong> Physical activity provides a healthy outlet to relieve daily stress and improve relaxation.</p>
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function redirectToNews() {
+            window.location.href = 'https://www.skysports.com/football';
+        }
+    </script>
+
+</body>
+</html>
